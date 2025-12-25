@@ -1,2 +1,1 @@
-"# physical-Ai-book-hackathone" 
-"# physical-ai-humanoid-robotics-book-hackathone" 
+# Physical AI Book Hackathon 
