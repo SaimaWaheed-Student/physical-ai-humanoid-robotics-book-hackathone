@@ -1,0 +1,225 @@
+/**
+ * Custom CSS for Physical AI & Humanoid Robotics Book
+ * Enhances the default Docusaurus styling for robotics documentation
+ */
+
+/* Custom variables for robotics-themed colors */
+:root {
+  --ifm-color-primary: #1a73e8; /* Google blue, reminiscent of robotics/tech */
+  --ifm-color-primary-dark: #1865d0;
+  --ifm-color-primary-darker: #1659b7;
+  --ifm-color-primary-darkest: #124795;
+  --ifm-color-primary-light: #2b85ee;
+  --ifm-color-primary-lighter: #3a8fee;
+  --ifm-color-primary-lightest: #5ca7f0;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Robotics-specific colors */
+  --robotics-safety-color: #d93025; /* Red for safety warnings */
+  --robotics-tip-color: #188038;    /* Green for tips */
+  --robotics-info-color: #0d65d9;   /* Blue for information */
+  --robotics-caution-color: #f9ab00; /* Yellow-orange for cautions */
+}
+
+/* Enhanced admonition styles for robotics content */
+.admonition {
+  margin: 1.5rem 0;
+  border-radius: 6px;
+  border-left-width: 4px;
+  border-left-style: solid;
+}
+
+.admonition.admonition-note {
+  border-color: var(--ifm-color-primary);
+}
+
+.admonition.admonition-tip {
+  border-color: var(--robotics-tip-color);
+  background-color: rgba(24, 128, 56, 0.05);
+}
+
+.admonition.admonition-warning {
+  border-color: var(--robotics-caution-color);
+  background-color: rgba(249, 171, 0, 0.05);
+}
+
+.admonition.admonition-caution {
+  border-color: var(--robotics-safety-color);
+  background-color: rgba(217, 48, 37, 0.05);
+}
+
+.admonition-heading {
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  margin: 0;
+  border-bottom: 1px solid var(--ifm-table-border-color);
+}
+
+.admonition-content {
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+/* Enhanced code block styling for robotics code */
+.prism-code {
+  border-radius: 6px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+/* Specific styling for Python code (common in robotics) */
+.language-python {
+  background-color: rgba(255, 229, 100, 0.1); /* Light yellow background */
+}
+
+/* Enhanced table styling for robotics parameters */
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+
+.table thead tr {
+  background-color: var(--ifm-table-head-background);
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border: 1px solid var(--ifm-table-border-color);
+}
+
+/* Custom styling for Mermaid diagrams */
+.mermaid {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+/* Enhanced sidebar for robotics modules */
+.menu {
+  font-size: 0.9rem;
+}
+
+.menu__list-item-collapsible .menu__link--sublist {
+  font-weight: 600;
+  color: var(--ifm-menu-color);
+}
+
+/* Custom styling for headers */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin: 2rem 0 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin: 1.8rem 0 1rem;
+}
+
+/* Enhanced link styling */
+.markdown a {
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+}
+
+.markdown a:hover {
+  border-bottom-style: solid;
+  text-decoration: none;
+}
+
+/* Custom styling for robotics-specific content */
+.robotics-concept-box {
+  background-color: var(--ifm-color-emphasis-100);
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.robotics-code-example {
+  background-color: var(--ifm-code-background);
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+/* Enhanced list styling */
+.markdown ul,
+.markdown ol {
+  margin: 1rem 0;
+}
+
+.markdown li {
+  margin-bottom: 0.5rem;
+}
+
+/* Custom styling for dark mode */
+html[data-theme='dark'] {
+  --ifm-color-primary: #4285f4; /* Lighter blue for better contrast in dark mode */
+  --ifm-color-primary-dark: #3367d6;
+  --ifm-color-primary-darker: #2d5aa0;
+  --ifm-color-primary-darkest: #24477c;
+  --ifm-color-primary-light: #5d99ff;
+  --ifm-color-primary-lighter: #84b6ff;
+  --ifm-color-primary-lightest: #b6d1ff;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* Dark mode specific variables */
+  --ifm-background-color: #0a0a0a;
+  --ifm-background-surface-color: #121212;
+  --ifm-foreground-color: #e0e0e0;
+  --ifm-color-content: #e0e0e0;
+  --ifm-menu-color: #e0e0e0;
+  --ifm-menu-color-active: var(--ifm-color-primary-light);
+}
+
+/* Responsive adjustments for robotics documentation */
+@media (max-width: 996px) {
+  .menu {
+    font-size: 0.85rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .prism-code {
+    font-size: 0.8rem;
+    padding: 0.75rem;
+  }
+}
+
+/* Print styles for robotics documentation */
+@media print {
+  .nav-sidebar {
+    display: none;
+  }
+
+  .docSidebarContainer {
+    display: none;
+  }
+
+  .docMainContainer {
+    flex: 1;
+  }
+}
