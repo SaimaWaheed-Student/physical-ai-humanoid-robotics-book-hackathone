@@ -22,7 +22,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'SaimaWaheed-Student', // Usually your GitHub org/user name.
-  projectName: 'physical-ai-humanoid-robotics-book', // Usually your repo name.
+  projectName: 'physical-ai-humanoid-robotics-book-hackathone', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -43,7 +43,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/SaimaWaheed-Student/physical-Ai-book-hackathone/edit/main/my-website/',
+            'https://github.com/SaimaWaheed-Student/physical-ai-humanoid-robotics-book-hackathone/edit/main/my-website/',
         },
         blog: {
           showReadingTime: true,
@@ -54,7 +54,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/SaimaWaheed-Student/physical-Ai-book-hackathone/edit/main/my-website/',
+            'https://github.com/SaimaWaheed-Student/physical-ai-humanoid-robotics-book-hackathone/edit/main/my-website/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -88,7 +88,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/SaimaWaheed-Student/physical-Ai-book-hackathone',
+          href: 'https://github.com/SaimaWaheed-Student/physical-ai-humanoid-robotics-book-hackathone',
           label: 'GitHub',
           position: 'right',
         },
